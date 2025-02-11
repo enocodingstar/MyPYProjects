@@ -1,0 +1,4 @@
+All activities are recorded and stored here.
+Task sweep has been added
+Task cook has been added
+Congratulations! Task 'sweep' has been completed.
