@@ -18,14 +18,14 @@ def main():
 
         if (choice == "1"):
             print("Add a task: ")
-            name = input("Enter the task name: ")
-            description = input("Describe the task: ")
-            deadline = input("Enter the deadline for the task in hours")
+            name = input("Enter the task name: ").strip().lower()
+            description = input("Describe the task: ").strip().lower()
+            deadline = input("Enter the deadline for the task in hours").strip().lower()
             status = "incomplete"
 
             task = ToDoFunctions.addTasks(name, description, deadline, status)
 
-            content = f"Task {task["name"]} has been added"
+            content = f"Task {task['name']} has been added"
             ToDoFunctions.appendRecords(filename, content)
 
             print(content)
@@ -34,18 +34,18 @@ def main():
 
             if tasks:
                 for i, task in enumerate(tasks, start=1):
-                    print(f"{i}. Name: {task["name"]} \n  Description: {task["description"]} \n Deadline: {task["deadline"]} hours \n Status: {task["status"]}")
+                    print(f"{i}. Name: {task['name']} \n  Description: {task['description']} \n Deadline: {task['deadline']} hours \n Status: {task['status']}")
             else:
                 print("No tasks to show.")
         elif (choice == "3"):
-            name = input("Enter the task name: ")
+            name = input("Enter the task name: ").strip().lower()
 
             task = ToDoFunctions.markTasks(name)
 
             if task:
                 if task["status"] == "incomplete":
                     task["status"] = "complete"
-                    content = f"Congratulations! Task '{task["name"]}' has been completed."
+                    content = f"Congratulations! Task '{task['name']}' has been completed."
                     ToDoFunctions.appendRecords(filename, content)
 
                     print(content)
@@ -58,10 +58,10 @@ def main():
 
             if tasks:
                 for i, task in enumerate(tasks, start=1):
-                    print(f"{i}. Name: {task["name"]} \n  Description: {task["description"]} \n Deadline: {task["deadline"]} hours \n Status: {task["status"]}")
-                index = int(input("Enter a task number: "))
+                    print(f"{i}. Name: {task['name']} \n  Description: {task['description']} \n Deadline: {task['deadline']} hours \n Status: {task['status']}")
+                index = int(input("Enter a task number: ").strip())
                 removedTask = ToDoFunctions.removeTasks(index)
-                print(f"Task {removedTask["name"]} has been removed.")
+                print(f"Task {removedTask['name']} has been removed.")
             else:
                 print("No tasks to show.")
         elif (choice == "5"):

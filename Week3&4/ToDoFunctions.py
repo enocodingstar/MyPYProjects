@@ -42,7 +42,7 @@ def markTasks(name):
 
 """Removing tasks"""
 def removeTasks(index):
-        removedTask = tasks.pop(index)
+        removedTask = tasks.pop(index + 1)
         return removedTask
 
 
