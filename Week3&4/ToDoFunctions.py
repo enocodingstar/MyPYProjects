@@ -36,7 +36,7 @@ def viewTasks():
 """Mark task as complete"""
 def markTasks(name):
     for task in tasks:
-        if task["name"] == name:
+        if task["name"].lower() == name:
             return task
         return None
 
