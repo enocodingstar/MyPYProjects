@@ -1,3 +1,2 @@
 All activities are recorded and stored here.
-Task bark has been added
-Congratulations! Task 'bark' has been completed.
+Task cook has been added
