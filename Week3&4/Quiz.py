@@ -11,6 +11,7 @@ def main():
     options = ['a', 'b', 'c', 'd']
     correct = 0
     incorrect = 0
+    score = 0
 
     for i, question in enumerate(questions, start=1):
         print(f"Question {i} \n {question['question']} \n a. {question['a']} \n b. {question['b']} \n c. {question['c']} \n d. {question['d']}")
@@ -25,6 +26,7 @@ def main():
         if(answer == question['answer']):
             print("Correct!")
             correct += 1
+            score += 10
         else:
             print("Incorrect!")
             incorrect += 1
