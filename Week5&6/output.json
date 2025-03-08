@@ -1,0 +1,27 @@
+[
+    {
+        "name": "Marinette",
+        "age": "14",
+        "gender": "female"
+    },
+    {
+        "name": "Adrien",
+        "age": "14",
+        "gender": "male"
+    },
+    {
+        "name": "Violet",
+        "age": "17",
+        "gender": "female"
+    },
+    {
+        "name": "Ekko",
+        "age": "15",
+        "gender": "male"
+    },
+    {
+        "name": "Powder",
+        "age": "14",
+        "gender": "female"
+    }
+]

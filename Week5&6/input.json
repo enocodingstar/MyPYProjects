@@ -1,0 +1,46 @@
+{
+    "players": [
+        {
+            "name": "Christiano Ronaldo",
+            "age": "40",
+            "gender": "male",
+            "nationality": "Portuguese",
+            "club": "Al-Nassr"
+        },
+        {
+            "name": "Lamine Yamal",
+            "age": "17",
+            "gender": "male",
+            "nationality": "Spanish",
+            "club": "Barcelona"
+        },
+        {
+            "name": "Erling Haaland",
+            "age": "24",
+            "gender": "male",
+            "nationality": "Norwegian",
+            "club": "Manchester City"
+        },
+        {
+            "name": "Kylian Mbappe",
+            "age": "26",
+            "gender": "male",
+            "nationality": "French",
+            "club": "Rwal Madrid"
+        },
+        {
+            "name": "Kyle Walker",
+            "age": "34",
+            "gender": "male",
+            "nationality": "English",
+            "club": "AC Milan"
+        },
+        {
+            "name": "Lionel Messi",
+            "age": "38",
+            "gender": "male",
+            "nationality": "Argentinian",
+            "club": "Inter Miami"
+        }
+    ]
+}

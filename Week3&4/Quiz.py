@@ -1,7 +1,5 @@
 import QuizFunc
 
-
-
 def main():
     print("Hello there! Time to show your IQ!")
     print("There are 20 questions to answer")
@@ -33,12 +31,7 @@ def main():
 
     print(f"Quiz completed! \n Correct: {correct} \n Incorrect: {incorrect}")
 
-            
     
-
-    
-
-
 if (__name__ == "__main__"):
     main()
 
