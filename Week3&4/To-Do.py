@@ -18,9 +18,9 @@ def main():
 
         if (choice == "1"):
             print("Add a task: ")
-            name = input("Enter the task name: ").strip().lower()
-            description = input("Describe the task: ").strip().lower()
-            deadline = input("Enter the deadline for the task in hours").strip().lower()
+            name = input("Enter the task name: ")
+            description = input("Describe the task: ")
+            deadline = float(input("Enter the deadline for the task in hours"))
             status = "incomplete"
 
             task = ToDoFunctions.addTasks(name, description, deadline, status)
@@ -38,21 +38,21 @@ def main():
             else:
                 print("No tasks to show.")
         elif (choice == "3"):
-            name = input("Enter the task name: ").strip().lower()
+            name = input("Enter the task name: ")
 
             task = ToDoFunctions.markTasks(name)
 
-            if task:
-                if task["status"] == "incomplete":
-                    task["status"] = "complete"
-                    content = f"Congratulations! Task '{task['name']}' has been completed."
-                    ToDoFunctions.appendRecords(filename, content)
+            
+            if task["status"] == "incomplete":
+                task["status"] = "complete"
+                content = f"Congratulations! Task '{task['name']}' has been completed."
+                ToDoFunctions.appendRecords(filename, content)
 
-                    print(content)
-                elif task["status"] == "complete":
-                    print("Task already completed")
-                else:
-                    print("Task doesn't exist.")
+                print(content)
+            elif task["status"] == "complete":
+                print("Task already completed")
+            else:
+                print("Task doesn't exist.")
         elif (choice == "4"):
             tasks = ToDoFunctions.viewTasks()
 
